@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Quicksand:wght@300&display=swap');
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* utility styles */
+html, body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.7);
+    
+  }
+
+
+
+
+
+
+
+/* navbar */
+
+#colorlib-aside {
+    padding-top: 3rem;
+    padding-bottom: 40px;
+    float: left;
+    width: 300px;
+    height: auto;
+    position: fixed;
+    overflow-y: scroll;
+    z-index: 1001;
+    background: #f2f3f7;
+    text-align: center;
+    margin-left: 160px;
+}
+
+#colorlib-aside #myname a{
+    font-family:'Playfair Display', serif;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #000;  
+     
+}
+
+#colorlib-aside p {
+    font-size: medium;
+    font-weight: bold;
+}
+
+#colorlib-aside p .primary-text{
+    color: #2c98f0;
+}
+#colorlib-aside .nameinfo{
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+#colorlib-aside .myimage img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 50%;
+    background: no-repeat center center/cover;
+    position: relative;
+    cursor: pointer;
+}
+
+#colorlib-aside #colorlib-main-menu {
+    display: block;
+    width: 100%;
+}
+
+#colorlib-aside #colorlib-main-menu ul {
+    list-style: none;
+}
+
+#colorlib-aside #colorlib-main-menu ul li {
+    margin: 0 0 10px 0;
+    padding: 0;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+#colorlib-aside #colorlib-main-menu ul li a{
+    font-weight:300;
+    text-decoration: none;
+    color: rgba(0,0,0,.7);
+    position: relative;
+    padding: 10px 0; 
+    margin-bottom: 0.5rem;
+    
+}
+
+
+
+#colorlib-aside #colorlib-main-menu ul li a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+#colorlib-aside #colorlib-main-menu ul li:active{
+    text-decoration: underline;
+    color: #2c98f0;
+}
+
+.navbar {
+    border-radius: 4px;
+    position: relative;
+    min-height: 55px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+#colorlib-aside .colorlib-footer {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#colorlib-aside .colorlib-footer .iconlinks {
+    list-style: none;   
+    text-align: center;
+}
+
+#colorlib-aside .colorlib-footer .iconlinks li {
+    float: left;
+    margin: 1rem;
+    padding-left: 1rem;
+}
+
+#colorlib-aside .colorlib-footer .iconlinks li a{
+    color: #2c98f0;
+}
+
+#colorlib-aside .colorlib-footer .iconlinks li a:hover{
+    color: rgb(15, 116, 179);
+}
+
+/* navbar #end */
+
+
+
+
+
+
+
+
+
+/* sidebody- mainbody styling */
+
+#colorlib-main {
+    float: right;
+    width:  calc(100% - 460px);
+}
+
+/* #colorlib-main #colorlib-hero .flexslider .homeinfo {
+    
+} */
+#colorlib-hero .flexslider .slider-text > .slider-text-inner {
+    display: table-cell;
+    vertical-align: middle;
+    min-height: 700px;
+    padding: 2.5em;
+    position: relative;
+}
+
+#colorlib-main #colorlib-hero .flexslider .homeinfo img{
+    width: auto;
+    height: 40rem;
+    align-items: center;
+}
+
+#colorlib-main #colorlib-hero .flexslider .homeinfo{
+    display: table-cell;
+    vertical-align: middle;
+    min-height: 700px;
+    padding: 2.5em;
+    position: relative;
+    display: flex;
+    flex: 1 2;
+}
+
+#colorlib-main #colorlib-hero .flexslider .homeinfo .disc{
+    margin: 2rem;
+    padding: 3rem ;
+    padding-top: 10rem;
+}
+
+#colorlib-main #colorlib-hero .flexslider .homeinfo .disc h1{
+    font-family:'Playfair Display', serif;
+    color: #000;
+    margin-bottom: 20px;
+    font-size: 60px;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+#colorlib-main #colorlib-hero .flexslider .homeinfo .disc h2{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-weight: lighter;
+}
+
+.btn{
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    margin: 4px 4px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 15px ;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background: #f2f3f7;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.btn-blue {
+    background: #2c98f0;
+    color: white;
+    border: 1px solid #ddd;
+}
+#colorlib-main #colorlib-hero .flexslider .homeinfo .disc a:hover{
+    color: #000;
+    font-weight: bolder;
+    background: #e0dddd;
+}
+
+
+
+
+
+
+
+
+
+/* about section styling */
+
+#colorlib-main .heading-meta {
+    margin-bottom: 15px;
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #999;
+    font-weight: 500;
+    letter-spacing: 5px;
+    padding-top: 3rem;
+}
+
+#colorlib-main .colorlib-narrow-content {
+    padding: 0 5rem;
+}
+
+#colorlib-main .colorlib-heading {
+    font-size: 18px;
+    margin-bottom: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.8;
+    
+}
+
+#colorlib-main .colorlib-about  p{
+    margin: 0 0 10px;
+    margin-bottom: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+    font-family: "Playfair Display",Georgia,serif;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+    margin-bottom: 30px;
+}
+
+#colorlib-main .colorlib-about .row {
+    display: flex;
+    margin: 3rem 0;
+}
+
+#colorlib-main .row .services{
+    flex: 1;
+    text-align: center;
+    margin: 1rem;
+    padding: 2rem 0;
+    box-shadow: 0 0 56px -8px rgba(0,0,0,.17);
+    border-bottom: 2px solid #2c98f0;   
+}
+
+#colorlib-main .row .services h3{
+    padding-top: 1rem;
+}
+
+#colorlib-main .row .services .icon2 {
+    display: block;
+    margin-bottom: 20px;
+}
+
+#colorlib-main .row .color-1 .icon2 i,
+#colorlib-main .row .color-1 {
+    
+    color: #2c98f0;
+    border-bottom: 2px solid #2c98f0;
+}
+
+#colorlib-main .row .color-2 .icon2 i,
+#colorlib-main .row .color-2 {
+    color: #ec5453;
+    border-bottom: 2px solid #ec5453;
+}
+
+#colorlib-main .row .color-3 .icon2 i,
+#colorlib-main .row .color-3 {
+    color: #f9bf3f;
+    border-bottom: 2px solid #f9bf3f;
+}
+
+#colorlib-main .row .color-4 .icon2 i,
+#colorlib-main .row .color-4 {
+    color: #a84cb8;
+    border-bottom: 2px solid #a84cb8;
+}
+
+#colorlib-main .row .color-5 .icon2 i,
+#colorlib-main .row .color-5 {
+    color: #2fa499;
+    border-bottom: 2px solid #2fa499;
+}
+
+#colorlib-main .row .color-6 .icon2 i,
+#colorlib-main .row .color-6 {
+    color: #4054b2;
+    border-bottom: 2px solid #4054b2;
+}
+
+#colorlib-main .row .hire{
+    background: #f9bf3f;
+    width: 100vw;
+    text-align: left;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+#colorlib-main .row .hire a{
+    text-decoration: none;
+}
+
+#colorlib-main .row .hire a:hover{
+    color: #000;
+    font-weight: bolder;
+    background: #e0dddd;
+}
+
+
+
+
+
+
+
+/* services styling */
+#colorlib-main .colorlib-services .row {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1rem;
+  
+}
+
+
+
+
+/* skills styling */
+
+#colorlib-main .colorlib-skills .grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 1rem;
+    padding-bottom: 4rem;
+}
+
+.progress-bar.color-1 {
+    background: #2c98f0;
+}
+
+.progress-bar.color-2 {
+    background: #ec5453;
+}
+
+.progress-bar.color-3 {
+    background: #2fa499;
+}
+.progress-bar.color-4 {
+    background: #f9bf3f;
+}
+.progress-bar.color-5 {
+    background: #4054b2;
+}
+.progress-bar.color-6 {
+    background: #a84cb8;
+}
+
+.progress-wrap h3 {
+    font-size: 16px;
+    font-family: "Quicksand",Arial,sans-serif;
+    margin-bottom: 10px;
+}
+
+.colorlib-skills .row {
+    padding-bottom: 3rem ;
+}
+.progress-bar {
+    
+    box-shadow: none;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #000;
+    font-weight: 600;
+    text-align: right;
+    position: relative;
+    overflow: visible;
+    border-radius: 8px;
+    height: 100%;
+    padding-bottom: 0.5rem;
+    
+}
+
+.progress-wrap{
+    padding-bottom: 3rem;
+}
+
+.progress-bar span {
+    position: absolute;
+    top: -22px;
+    right: 0;
+}
+
+/* education styling */
+
+.panel-default > .panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    border-radius: 10px;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+#colorlib-main .colorlib-education .panel a{
+    text-decoration: none;
+    color: #000;
+    padding: 20px 25px;
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#colorlib-main .colorlib-education .container {
+    padding: 5rem;
+    margin-bottom: 4rem;
+}
+
+
+
+
+/* experience styling */
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+    position: relative;
+    background: #f2f3f7;
+    background-clip: border-box;
+    padding: 1.5em;
+    margin-left: 60px;
+    background-clip: padding-box;
+    margin-bottom: 3rem;
+
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* blog section */
+
+#colorlib-main .colorlib-blog img{
+    display: block;
+    max-width: 14rem;
+    max-height: 14rem;
+    
+}
+
+#colorlib-main .colorlib-blog .blogrow{
+    display: flex;
+    padding-bottom: 4rem;
+    margin-bottom: 6rem;
+}
+
+#colorlib-main .colorlib-blog .blogrow .blog-entry{
+    flex: 1;
+    padding: 0 3rem;
+}
+
+#colorlib-main .colorlib-blog .blogrow .blog-entry a{
+    text-decoration: none;
+    color: #000;
+    margin-top: 2rem;
+   
+}
+
+#colorlib-main .colorlib-blog .blogrow .blog-entry span{
+    margin: 2rem;
+    padding-bottom: 2rem;
+}
+
+#colorlib-main .colorlib-blog .blogrow .blog-entry img{
+    padding: 1rem;
+    align-items: center;
+}
+
+
+/* contact styling */
+
+#colorlib-main .colorlib-contact {
+    padding-top: 4em;
+    padding-bottom: 9em;
+    clear: both;
+    width: 100%;
+    display: block;
+}
+
+#colorlib-main .colorlib-contact .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.form-control {
+    display: block;
+    background: transparent;
+    border: transparent;
+    background: #f2f3f7;
+    height: 54px;
+    font-size: 16px;
+    font-weight: 400;
+
+    
+    width: 100%;
+    height: 42px;
+    padding: 10px 20px;
+
+    line-height: 1.42857;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+#message {
+    height: 10rem;
+}
+
+#colorlib-main .colorlib-contact .contactflex {
+    display: flex;
+}
+
+#colorlib-main .colorlib-contact .contactflex a{
+    text-decoration: none;
+    color: rgb(28, 99, 165);
+}
+#colorlib-main .colorlib-contact .contactflex .rowone{
+    flex: 1;
+}
+
+#colorlib-main .colorlib-contact .contactflex .colorlib-icon{
+    color: #2c98f0;
+    padding: 2rem;
+    
+}
